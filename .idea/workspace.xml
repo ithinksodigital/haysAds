@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae0b319a-88a6-4c81-a47f-52694c4c9a2f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/hays_offer_generator/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hays_offer_generator/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="ae0b319a-88a6-4c81-a47f-52694c4c9a2f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,12 +313,12 @@
       <workItem from="1581422564184" duration="353000" />
       <workItem from="1581437148042" duration="4687000" />
       <workItem from="1581488776100" duration="556000" />
-      <workItem from="1581520465333" duration="5813000" />
+      <workItem from="1581520465333" duration="6115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68155000" />
+    <option name="totallyTimeSpent" value="68457000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,7 +331,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="831" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22246066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
