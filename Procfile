@@ -1,1 +1,1 @@
-web: gunicorn hays_offer_generator.wsgi --log-file -
+web: gunicorn hays_offer_generator.wsgi:application --log-file - --log-level debug
