@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ photo.specialism }}</title>
+    <script src={% static "js/html2canvas.js" %}></script>
+    <script src={% static "js/query.min.js" %}></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_create.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <div class="alert">
+        <h2 style="color: #D61C83;">Proszę, powiększ okno przeglądarki.</h2>
+    </div>
+    <div class="wrapper">
+        <div id="capture"  style="width: 800px; height: 550px; background-image: url('{{ photo.background_file.url }}' );">
+            <div onkeypress="return (this.innerText.length <= 32)" class ="textArea editable" id="jobTitle" spellcheck="false" contentEditable>Nazwa stanowiska</div>
+            <div onkeypress="return (this.innerText.length <= 35)"class ="textArea editable" id="jobLocation" spellcheck="false" contentEditable>Lokalizacja (lokalizacja i wynagrodzenie)</div>
+            <div class = "textArea editable" id="jobDescription" spellcheck="false" contentEditable>Oferta</div>
+            <div class = "textArea editable" id="jobEmail" spellcheck="false" contentEditable>Aplikuj: twoj_email@hays.pl</div>
+        </div>
+
+        <div class="job-ga-link-wrapper">
+            <div id="job-ga-link-expl"></div>
+            <div id="job-ga-link"></div>
+        </div>
+
+
+        <div class="form__group field">
+          <input type="input" class="form__field" placeholder="Name" name="name" id='jobId' required />
+          <label for="name" class="form__label">Wpisz numer referencyjny ogłoszenia na Hays.pl</label>
+        </div>
+
+            <button class="fill" onclick="catch_img()"><b>Pobierz grafikę</b></button>
+    </div>
+
+
+    <div class="icon-bar">
+      <a href="{% url 'specialism' specialism.id %}" class="step-back"><i class="fas fa-arrow-left"> </i></a><br/>
+      <a href="https://github.com/radipawelec"  target="_blank" class="step-back"><i class="fab fa-github"> </i></a>
+    </div>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+
+</body>
+</html>
