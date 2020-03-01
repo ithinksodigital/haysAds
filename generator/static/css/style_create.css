@@ -1,7 +1,14 @@
     @font-face {
       font-family: "Gotham Narrow";
         src: local('Gotham Narrow'),
-        giurl("../fonts/GothamNarrowBold.otf") format("otf")
+        url("../fonts/GothamNarrowBold.otf")
+    }
+
+
+        @font-face {
+      font-family: "Gotham Narrow Book";
+        src: local('Gotham Narrow Book"'),
+        url("../fonts/GothamNarrow-Book.otf")
     }
     html {
         background-color: #fff;
@@ -11,18 +18,16 @@
     }
     #jobTitle {
         font-family: "Gotham Narrow";
-        font-weight: bold;
-        /*{#padding-top: 70px;#}*/
+        word-wrap: break-word;
         padding-left: 70px;
         line-height: 29px;
-        /*{#height: 80px;#}*/
         max-width: 270px;
-        max-height: 70px;
-        font-size: 31px;
+        max-height: 63px;
+        font-size: 30px;
         color: #002776;
         text-transform: uppercase;
         margin-top: 70px;
-        overflow: auto;
+        /*overflow: auto;*/
         overflow: -moz-scrollbars-none;
         overflow: hidden;
 
@@ -41,7 +46,7 @@
     }
 
     #jobDescription {
-        font-family: "Gotham Narrow";
+        font-family: "Gotham Narrow Book";
         font-size: 18px;
         padding-top: 10px;
         padding-left: 70px;

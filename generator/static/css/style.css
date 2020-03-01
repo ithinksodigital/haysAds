@@ -1,11 +1,9 @@
-@font-face {
-  font-family: "Gotham Narrow";
-  src: url("../fonts/GothamNarrowBold.otf") format("otf")
-}
+/*@font-face {*/
+/*  font-family: "Gotham Narrow";*/
+/*    src: local('Gotham Narrow'), url("../fonts/GothamNarrowBold.otf") format("opentype");*/
+/*}*/
 
 
-* {
-    font-family: "Gotham Narrow";}
 .row {
     display: flex;
     align-items: center;

@@ -19,7 +19,7 @@ function check_charcount(content_id, max, e)
 // limit characters on apply
 
 var content_id1 = 'jobEmail';
-max1 = 50;
+max1 = 45;
 //binding keyup/down events on the contenteditable div
 $('#'+content_id1).keyup(function(e){ check_charcount(content_id1, max1, e); });
 $('#'+content_id1).keydown(function(e){ check_charcount(content_id1, max1, e); });

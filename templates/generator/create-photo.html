@@ -12,7 +12,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
 
+
+
 </head>
+<script>$(div).on('paste', false);</script>
 <script>
     $(document).ready(function(){
 	$(document).keydown(function(event) {
@@ -35,7 +38,12 @@
 });
 </script>
 
-
+<script>
+    $('div').on('paste',function(e) {
+    e.preventDefault();
+    return false;
+});
+</script>
 
 <script>
   document.body.addEventListener("wheel", e=>{
@@ -72,7 +80,7 @@ $(window).bind('mousewheel DOMMouseScroll', function (event) {
         <div id="capture"  style="width: 800px; height: 550px; background-image: url('{{ photo.background_file.url }}' );">
             <div onkeypress="return (this.innerText.length <= 32)" class ="textArea editable" id="jobTitle" spellcheck="false" contentEditable>Nazwa stanowiska</div>
             <div onkeypress="return (this.innerText.length <= 35)"class ="textArea editable" id="jobLocation" spellcheck="false" contentEditable>Lokalizacja (lokalizacja i wynagrodzenie)</div>
-            <div class = "textArea editable" id="jobDescription" spellcheck="false" contentEditable>Oferta</div>
+            <div class = "textArea editable" id="jobDescription"  onPaste="return false" spellcheck="false" contentEditable>Oferta</div>
             <div class = "textArea editable" id="jobEmail" spellcheck="false" contentEditable>Aplikuj: twoj_email@hays.pl</div>
         </div>
 
