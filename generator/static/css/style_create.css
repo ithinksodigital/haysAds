@@ -1,6 +1,7 @@
     @font-face {
       font-family: "Gotham Narrow";
-      src: url("GothamNarrowBold.otf") format("otf")
+        src: local('Gotham Narrow'),
+        giurl("../fonts/GothamNarrowBold.otf") format("otf")
     }
     html {
         background-color: #fff;
@@ -17,11 +18,13 @@
         /*{#height: 80px;#}*/
         max-width: 270px;
         max-height: 70px;
-        font-size: 30px;
+        font-size: 31px;
         color: #002776;
         text-transform: uppercase;
         margin-top: 70px;
         overflow: auto;
+        overflow: -moz-scrollbars-none;
+        overflow: hidden;
 
     }
     #jobLocation {
@@ -32,6 +35,8 @@
         font-size: 24px;
         color: #039FDA;
         overflow: auto;
+        overflow: -moz-scrollbars-none;
+        overflow: hidden;
 
     }
 
@@ -43,6 +48,8 @@
         max-width: 270px;
         height: 200px;
         overflow: auto;
+        overflow: -moz-scrollbars-none;
+        overflow: hidden;
 
     }
 
@@ -57,6 +64,8 @@
         height: 44px;
         max-height: 44px;
         overflow: auto;
+        overflow: -moz-scrollbars-none;
+        overflow: hidden;
 
     }
 

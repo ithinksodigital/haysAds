@@ -15,6 +15,25 @@ function check_charcount(content_id, max, e)
     }
 }
 
+
+// limit characters on apply
+
+var content_id1 = 'jobEmail';
+max1 = 50;
+//binding keyup/down events on the contenteditable div
+$('#'+content_id1).keyup(function(e){ check_charcount(content_id1, max1, e); });
+$('#'+content_id1).keydown(function(e){ check_charcount(content_id1, max1, e); });
+
+function check_charcount(content_id1, max1, e)
+{
+    if(e.which != 8 && $('#'+content_id1).text().length > max1)
+    {
+       // $('#'+content_id).text($('#'+content_id).text().substring(0, max));
+       e.preventDefault();
+    }
+}
+
+
 // creating utm link & capture picture
 
 function catch_img() {
