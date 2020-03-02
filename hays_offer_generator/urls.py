@@ -23,7 +23,7 @@ from django.contrib import admin
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('generator/', include('generator.urls')),
-
+    path('', include('generator.urls')),
 ]
 
 if settings.DEBUG is True:
